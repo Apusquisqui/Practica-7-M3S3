@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('imgs/Fondo\ \(Medium\).jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: auto; /*Centra el contenedor principal*/
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+}
+
+/*---------------*/
+/*    header     */
+/*---------------*/
+
+header{
+    padding: 40px 0;
+}
+
+header .logo{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+header .logo p{
+    color: #b9b9b9;
+}
+
+header form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .buscador{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .categorias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a{
+    color: #b9b9b9;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 800;/* Fuente en Negrita */
+}
+
+header .categorias a:hover{
+    color: aquamarine;
+}
+
+header .categorias a.activo{
+    color: rgb(44, 44, 221);
+    text-decoration: underline;
+}
+
+/* Contenido Principal */
+
+.grid{
+    position: relative;
+    width: 100%;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.3333333% - 20px); /*Esto es para que no haya espacio */
+}
+
+.grid .item-contenedor{
+    position: relative;
+}
+
+.grid .item img{
+    width: 100%;
+}
+
+.contenedor .grid .item .item-contenedor p{
+    font-size: 20px;
+    /*    Para que el texto se adapte al tamaño de la pantalla    */
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: dashed;
+    color: #fff;
+}
+
+.contenedor .gridp .itemp .contP p{
+    font-size: 20px;
+    /*    Para que el texto se adapte al tamaño de la pantalla    */
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: dashed;
+    color: #fff;
+}
+
+embed{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/*--------------*/
+/*    foot      */
+/*--------------*/
+
+
+.nav__menu{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    padding: .8rem;
+    color: antiquewhite;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__lista{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.nav__link:hover{
+    color: aqua;
+}
+
+#act{
+    color: blue;
+}

@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+
+.Encabezado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:  1000;
+    height: 60px;
+}
+
+.logoM{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navegacion ul{
+    list-style: none;
+    display: flex;
+
+}
+
+.Encabezado .navegacion ul li{
+    float: left;
+    position: relative;
+}
+
+.Encabezado .navegacion ul li a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    transition: all .2s ease;
+
+}
+
+.Encabezado .navegacion ul li a:hover{
+    background-color: rgb(40, 40, 220);
+}
+
+.Encabezado .navegacion ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: rgba(1, 1, 1, 0.7);
+    display: none;
+
+}
+
+.Encabezado .navegacion ul li ul li a {
+    font-size: 15px;
+    text-transform:  capitalize;
+
+}
+
+.Encabezado .navegacion ul li ul li ul {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+.Encabezado .navegacion ul li ul li{
+    width: 100%;
+}
+
+.Encabezado .navegacion ul li:hover > ul{
+    display: initial;
+}
+
+#btn-menu,
+.Encabezado label{
+    display: none;
+    cursor: pointer;
+}
+
+.Menus{
+    width: 45px;
+    height: 35px;
+
+}
+
+@media(max-width:800px){
+    .Encabezado label{
+        display: initial;
+    }    
+
+    .Encabezado{
+        padding: 20px 10%;
+    }
+
+    .Encabezado .navegacion{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+
+    .Encabezado .navegacion ul li{
+        width: 100%;
+    }
+
+    .Encabezado .navegacion ul li a{
+        padding: 8px 30px 8px 10%;
+    }
+
+    .Encabezado .navegacion ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .Encabezado .navegacion ul li ul li{
+        background-color: rgba(1, 1, 1, 0.7);
+    }
+
+    .Encabezado .navegacion ul li ul li ul{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    #btnMenu:checked ~ .navegacion{
+        display: block;
+    }
+
+}
