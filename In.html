@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/Decoracion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="imgs/ico.png">
+</head>
+<body class="fondo"> 
+    
+    <div class="contenedor">
+        <form action="scripts/PHP/validacion.php" method="post">
+            <h1>Inicio de sesión</h1>
+            <div class="inputBox">
+                <input name="user" type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox">
+                <input name="password" type="password" placeholder="contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <div class="remeber-forgot">
+
+                <label><input type="checkbox" /> Recuerdame</label>
+                <a href='#'>¿Olvido su contraseña?</a>
+            </div>
+
+            <button type="submit" class="btn" name="enviar" value="Inicio de sesión">Inicio de sesión</button>
+
+            <div class="registrar-link">
+                <p>¿No tienes una cuenta? <a href="Registro.html" class="btnRgis"> Crear Cuenta</a></p>
+                <p></p>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="CSS/Decoracion.css">
+    <link rel="shortcut icon" href="imgs/ico.png">
+</head>
+<body>
+    
+    
+    <div class="contenedor">
+        <form action="scripts/PHP/conexion.php" method="post">
+            <h1>Registro</h1>
+            <div class="inputBox">
+                <input name="user" type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox">
+                <input name="email" type="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputBox">
+                <input name="password" type="password" placeholder="contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <div class="inputBox">
+                <input name="edad" type="text" placeholder="Edad" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="inputBox">
+                <input name="nomr" type="text" placeholder="Nombre real completo" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remeber-forgot">
+
+                <label><input type="checkbox" /> Acepto los terminos de uso</label>
+            </div>
+
+            <button type="submit" class="btn" name="Registro">Registrarme</button>
+
+            <div class="registrar-link">
+                <p>¿Ya tienes una Cuenta? <a href="In.html" class="btnRgis"> Inicio de sesión</a></p>
+                <p></p>
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioChess</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css" >
+    <link rel="stylesheet" href="CSS/menus.css">
+    <link rel="shortcut icon" href="imgs/ico.png">
+</head>
+<body>  
+    
+    <header class="Encabezado">
+
+        <div class="logoM">Menú</div>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"> <img class="Menus" src="imgs/menu.svg" alt="Menu" > </label>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="In.html">Inicio de Sesión</a></li>
+                <li><a href="#" class="activo">Contenido</a>
+                    <ul class="submenu">
+                        <li><a href="#">Categorías</a></li>
+                        <li><a href="#">Leídos</a></li>
+                    </ul>
+                </li>
+                <li><a href="Perfil.html">Perfíl</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Práctica VII</h1>
+                <p>M3S3</p>
+            </div>
+            <form action="">
+                <input type="text" class="buscador" placeholder="Buscar..." id="buscador" />
+            </form>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/DesarrolloP (Small).png" alt="" />
+                    <a href="Lectura1.html"><p>Tomo 1</p></a>
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="Berserk"
+            data-etiquetas="Tomo1 Berserk-Tomo1 BerserkTomo1"
+            >
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/EjerP (Small).png" alt="" />
+                    <a href="LecturaII.html"><p>Tomo 2</p></a>
+                </div>
+            </div>
+            <div class="item"
+            data-categoria="Berserk"
+            data-etiquetas="Tomo2 Berserk-Tomo2 BerserkTomo2"
+            >
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/Escuela_Ajerdrez (Small).png" alt="" />
+                    <p>Tomo 3</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/Grau (Small).png" alt="" />
+                    <p>Tomo 4</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/OrigenE (Small).png" alt="" />
+                    <p>Tomo 5</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/DesarrolloP (Small).png" alt="" />
+                    <p>Tomo 6</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/Tactica-T1 (Small).png" alt="" />
+                    <p>Tomo 7</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/DesarrolloP (Small).png" alt="" />
+                    <p>Tomo 8</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-contenedor">
+                    <img src="imgs/Portadas/Secretos_Estra (Small).png" alt="" />
+                    <p>Tomo 9</p>
+                </div>
+            </div>
+
+        </section>
+        
+    </div>
+
+    <footer>
+        <div class="botones">
+            <nav class="contenido">
+                <div class="nav__menu">
+                    <ul class="nav__lista">
+                        <li class="nav__iteam">
+                            <a href="" class="nav__link" id="act">
+                                <i class="1"><span>1</span></i>
+                            </a>
+                        </li>
+                        <li class="nav__iteam">
+                            <a href="ContenidoII.html" class="nav__link" id="">
+                                <i class="2"><span>2</span></i>
+                            </a>
+                        </li>
+                        <li class="nav__iteam">
+                            <a href="" class="nav__link" id="">
+                                <i class="3"><span>3</span></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="scripts/JavaScript/main.js"></script>
+</body>
+</html>
